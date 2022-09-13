@@ -17,20 +17,18 @@ class a:
                 totalamount+=temp
             print (totalamount)
 class b:
-    Tea=15
-    samosa=20
+    per_Tea=15
+    per_samosa=20
     def Chai_kings(self,Hotel_Name,coupon_code,Dish_Qty):
         if Hotel_Name == "Chai_kings":
             totalamount = 0
             for key in Dish_Qty:
                 s=Dish_Qty[key]
-                if key == "Idly":
-                     temp= self.per_Idly * s
-                elif key == "Dosa":
-                     temp= self.per_Dosa * s
-                elif key == "Puri":
-                     temp= self.per_Puri * s
-                totalamount+=temp
+                if key == "Tea":
+                     temp1= self.per_Tea * s
+                elif key == "Samosa":
+                     temp1= self.per_samosa * s
+                totalamount+=temp1
             print (totalamount)
 
 
